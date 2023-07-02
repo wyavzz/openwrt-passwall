@@ -12,22 +12,22 @@ PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 
 include $(INCLUDE_DIR)/package.mk
 
-GEOIP_VER:=202306290054
+GEOIP_VER:=202306301512
 GEOIP_FILE:=geoip.dat.$(GEOIP_VER)
 define Download/geoip
   URL:=https://github.com/v2fly/geoip/releases/download/$(GEOIP_VER)/
   URL_FILE:=geoip.dat
   FILE:=$(GEOIP_FILE)
-HASH:=98ddc29959e2679a071fd97f25aebe01aad0c2af1e660e17378e11529d2045ef
+HASH:=56f2f4c43ea40e2c0d314b45851b1db3a63a4005467f21b5fe91cf116c8cfa6a
 endef
 
-GEOSITE_VER:=20230627034247
+GEOSITE_VER:=20230702010337
 GEOSITE_FILE:=dlc.dat.$(GEOSITE_VER)
 define Download/geosite
   URL:=https://github.com/v2fly/domain-list-community/releases/download/$(GEOSITE_VER)/
   URL_FILE:=dlc.dat
   FILE:=$(GEOSITE_FILE)
-HASH:=1f186b9d2638d899c74d5663ddf314a6735b06cb525bcd7b116a4d189abc87d0
+HASH:=35659e2f00512d37d4cf81e53cd2f1023281f7679db697c60cf624de5bcf0f2b
 endef
 
 define Package/v2ray-geodata/template
